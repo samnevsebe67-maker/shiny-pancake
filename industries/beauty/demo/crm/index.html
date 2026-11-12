@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AUREL OS — демонстрационная CRM для салона красоты · KINETIA</title>
+<meta name="description" content="AUREL OS — интерактивная демонстрация CRM для beauty-бизнеса: записи, клиенты, календарь мастеров, повторные визиты, источники и аналитика.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="/industries/beauty/demo/crm/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AUREL OS">
+<meta property="og:title" content="AUREL OS — CRM для салона красоты (демо)">
+<meta property="og:description" content="Демонстрационная CRM: записи, клиенты, календарь мастеров и аналитика. Проект KINETIA.">
+<meta property="og:locale" content="ru_RU">
+<meta name="theme-color" content="#131110">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%23131110'/%3E%3Ctext%20x='16'%20y='23'%20font-family='Georgia,serif'%20font-size='19'%20fill='%23E6D7C2'%20text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/industries/beauty/demo/assets/demo.css">
+<link rel="stylesheet" href="/industries/beauty/demo/assets/crm.css">
+</head>
+<body class="crmbody">
+
+<a class="skip" href="#crmView">К содержимому</a>
+
+<div class="demobar">
+  <span class="note"><b>AUREL OS</b> — демо-проект KINETIA</span>
+  <nav aria-label="Демонстрационная навигация">
+    <a href="/industries/beauty/demo/">Сайт салона</a>
+    <a href="/industries/beauty/demo/booking/">Онлайн-запись</a>
+    <a href="/industries/beauty#flow">3D Traffic Flow</a>
+    <a class="back" href="/industries/beauty">← KINETIA</a>
+  </nav>
+</div>
+
+<div class="crm" id="crm">
+  <aside class="crm-side" aria-label="Разделы CRM">
+    <div class="crm-brand">
+      <div>
+        <b>AUREL</b> <span>OS</span>
+        <small>Salon workspace</small>
+      </div>
+    </div>
+
+    <nav class="crm-nav" aria-label="Навигация CRM">
+      <button type="button" data-view="dash" class="on">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Обзор
+      </button>
+      <button type="button" data-view="calendar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="16"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        Записи <em id="navToday">0</em>
+      </button>
+      <button type="button" data-view="clients">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="9" cy="8" r="3.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 5.2A3.4 3.4 0 0 1 16 12M18 20c0-2.2-.8-4.2-2-5.6"/></svg>
+        Клиенты <em>248</em>
+      </button>
+      <button type="button" data-view="repeat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 6.3M20 5v6h-6"/></svg>
+        Повторные визиты
+      </button>
+      <button type="button" data-view="sources">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.4 10.8 15.6 7.2M8.4 13.2l7.2 3.6"/></svg>
+        Источники
+      </button>
+      <button type="button" data-view="analytics">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+        Аналитика
+      </button>
+      <button type="button" data-view="services">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        Услуги и прайс
+      </button>
+    </nav>
+
+    <div class="crm-side-sec">
+      <b>Режим</b>
+      <p>Демонстрационные данные. Изменения статусов и фильтры работают локально и не сохраняются.</p>
+    </div>
+
+    <div class="crm-side-foot">
+      AUREL OS · demo v1.0
+      <a href="/industries/beauty/demo/">← Вернуться на сайт салона</a>
+    </div>
+  </aside>
+
+  <div class="crm-main">
+    <div class="crm-top">
+      <div style="display:flex;align-items:center;gap:12px;min-width:0">
+        <button type="button" class="crm-burger" id="crmBurger" aria-label="Открыть меню CRM" aria-expanded="false">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <div style="min-width:0">
+          <h1 id="crmTitle">Обзор</h1>
+          <p class="sub" id="crmSub">Сводка по салону · демо-данные</p>
+        </div>
+      </div>
+      <div class="crm-top-act">
+        <span class="crm-tagline">Демо-данные</span>
+        <label class="crm-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          <input type="search" id="crmSearch" placeholder="Поиск клиента" aria-label="Поиск клиента">
+        </label>
+        <span class="crm-avatar" title="Администратор · демо">АМ</span>
+      </div>
+    </div>
+
+    <div class="crm-view" id="crmView" aria-live="polite"></div>
+  </div>
+</div>
+
+<aside class="crm-drawer" id="crmDrawer" aria-label="Карточка" aria-hidden="true">
+  <div class="crm-drawer-head">
+    <div>
+      <h2 id="drTitle">Карточка</h2>
+      <span id="drSub">Демо-данные</span>
+    </div>
+    <button type="button" class="crm-x" id="drClose" aria-label="Закрыть карточку">✕</button>
+  </div>
+  <div class="crm-drawer-body" id="drBody"></div>
+</aside>
+
+<div class="crm-toast" id="crmToast" role="status" aria-live="polite"></div>
+
+<script src="/industries/beauty/demo/assets/crm.js"></script>
+</body>
+</html>

@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="ru" class="gsap-ready">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digital-решения для отраслей бизнеса — KINETIA</title>
+<meta name="description" content="Отраслевые digital-решения KINETIA: сайты, реклама, CRM и автоматизация для салонов красоты, стоматологий, строительства, автосервисов и магазинов.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="/industries">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KINETIA">
+<meta property="og:title" content="Industry Solutions — digital-решения для отраслей бизнеса | KINETIA">
+<meta property="og:description" content="Пять отраслей, пять разных систем привлечения и управления заявками. Сайт, реклама, CRM и автоматизация под процессы конкретной ниши.">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='5.8'%20y1='27'%20x2='26.2'%20y2='5'%20gradientUnits='userSpaceOnUse'%3E%3Cstop%20offset='0'%20stop-color='%23087A58'/%3E%3Cstop%20offset='.5'%20stop-color='%2319DFA0'/%3E%3Cstop%20offset='1'%20stop-color='%237AFFCB'/%3E%3C/linearGradient%3E%3CradialGradient%20id='h'%20cx='.5'%20cy='.5'%20r='.5'%3E%3Cstop%20offset='0'%20stop-color='%2319DFA0'%20stop-opacity='.5'/%3E%3Cstop%20offset='.65'%20stop-color='%23087A58'%20stop-opacity='.18'/%3E%3Cstop%20offset='1'%20stop-color='%23087A58'%20stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%23050807'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='14'%20fill='url%28%23h%29'/%3E%3Cpath%20d='M16%202.2%2018.4%2013.6%2026.2%2016%2018.4%2018.4%2016%2029.8%2013.6%2018.4%205.8%2016%2013.6%2013.6Z'%20fill='url%28%23g%29'/%3E%3Cpath%20d='M16%2013.5%2018.5%2016%2016%2018.5%2013.5%2016Z'%20fill='%23E8FFF7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/industries/assets/base.css">
+<style>
+/* hub concept: constellation of five systems */
+.hub-hero{padding:clamp(22px,3vw,38px) 0 clamp(40px,6vw,70px)}
+.hub-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(26px,4vw,58px);align-items:center}
+.hub-hero h1{font-size:clamp(36px,5.4vw,68px);max-width:15ch;margin-top:18px}
+.hub-hero .lead{max-width:46ch}
+.hub-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hub-stage{--px:0;--py:0;--mx:50%;--my:46%;position:relative;aspect-ratio:1/.92;border-radius:24px;border:1px solid rgba(25,223,160,.16);background:radial-gradient(62% 58% at 50% 46%,rgba(8,88,64,.2),transparent 68%),linear-gradient(170deg,#060d0a,#030604);overflow:hidden;isolation:isolate;transform:translateZ(0);transition:border-color .6s ease}
+.hub-stage:before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background-image:linear-gradient(rgba(25,223,160,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(25,223,160,.05) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(72% 66% at 56% 48%,#000,transparent 80%);mask-image:radial-gradient(72% 66% at 56% 48%,#000,transparent 80%);opacity:.55}
+.hub-stage:after{content:"";position:absolute;inset:0;z-index:6;pointer-events:none;background:radial-gradient(118% 86% at 78% 16%,transparent 46%,rgba(2,4,3,.6) 100%),linear-gradient(90deg,rgba(3,6,5,.72),rgba(3,6,5,.18) 26%,transparent 46%),linear-gradient(0deg,rgba(2,4,3,.6),transparent 32%)}
+.hub-stage:hover{border-color:rgba(25,223,160,.3)}
+.hub-atmos{position:absolute;inset:-14%;z-index:0;pointer-events:none;background:radial-gradient(40% 40% at 64% 42%,rgba(25,223,160,.15),transparent 70%),radial-gradient(28% 30% at 80% 68%,rgba(8,122,88,.2),transparent 72%),radial-gradient(30% 26% at 32% 62%,rgba(6,84,62,.16),transparent 74%);filter:blur(22px);animation:hubAtmos 13s ease-in-out infinite alternate}
+.hub-arch-wrap{position:absolute;inset:-3% -6% -5% 12%;z-index:2;pointer-events:none;transform:translate3d(calc(var(--px)*11px),calc(var(--py)*9px),0);transition:transform .65s cubic-bezier(.22,1,.36,1)}
+.hub-arch-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% 42%}
+.hub-arch{opacity:0;filter:saturate(1.12) brightness(1.02);transition:opacity 1.6s ease .15s,filter .8s ease;animation:hubFloat 17s ease-in-out infinite alternate}
+.hub-arch-glow{opacity:0;filter:blur(22px) saturate(1.35) brightness(1.18);transform:scale(1.035);mix-blend-mode:screen;transition:opacity 2s ease .3s;animation:hubFloat 23s ease-in-out infinite alternate-reverse}
+.hub-stage.in-view .hub-arch{opacity:.52}
+.hub-stage.in-view .hub-arch-glow{opacity:.3}
+.hub-stage.is-focused .hub-arch{filter:saturate(1.2) brightness(1.1)}
+.hub-stage.is-focused .hub-arch-glow{opacity:.42}
+.hub-spotlight{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;background:radial-gradient(24% 24% at var(--mx) var(--my),rgba(25,223,160,.16),rgba(6,84,62,.05) 55%,transparent 72%);mix-blend-mode:screen;transition:opacity .5s ease}
+.hub-stage:hover .hub-spotlight{opacity:1}
+.hub-stage.is-focused .hub-spotlight{opacity:1;background:radial-gradient(30% 30% at var(--mx) var(--my),rgba(25,223,160,.24),rgba(6,84,62,.08) 52%,transparent 72%)}
+.hub-stage canvas{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none}
+.hub-stage .core{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);z-index:7;text-align:center;pointer-events:none}
+.hub-stage .core:before{content:"";position:absolute;left:50%;top:42%;width:210%;height:420%;transform:translate(-50%,-50%);background:radial-gradient(50% 50% at 50% 50%,rgba(25,223,160,.22),rgba(6,84,62,.1) 42%,transparent 70%);filter:blur(10px);animation:hubBreath 7s ease-in-out infinite;z-index:-1}
+.hub-stage .core b{display:block;font-size:clamp(12px,1.35vw,15px);letter-spacing:.26em;font-weight:800;color:#EAFFF7;text-transform:uppercase;text-shadow:0 0 26px rgba(25,223,160,.55),0 0 60px rgba(8,122,88,.35)}
+.hub-stage .core span{display:block;margin-top:7px;font:700 7.5px/1 var(--font);letter-spacing:.28em;color:rgba(122,255,203,.72);text-transform:uppercase}
+.hub-stage .node{position:absolute;transform:translate(-50%,-50%);display:grid;justify-items:center;gap:7px;z-index:8;text-align:center;width:88px;opacity:0;transition:opacity .55s ease,filter .45s ease}
+.hub-stage .node:after{content:"";position:absolute;left:50%;top:50%;width:132px;height:100px;transform:translate(-50%,-50%);z-index:-1;pointer-events:none;background:radial-gradient(50% 50% at 50% 50%,rgba(2,5,4,.62),rgba(2,5,4,.28) 48%,transparent 74%)}
+.hub-stage.in-view .node{opacity:1;animation:hubNodeIn .85s cubic-bezier(.22,1,.36,1) both}
+.hub-stage.in-view .node:nth-of-type(2){animation-delay:.11s}
+.hub-stage.in-view .node:nth-of-type(3){animation-delay:.2s}
+.hub-stage.in-view .node:nth-of-type(4){animation-delay:.29s}
+.hub-stage.in-view .node:nth-of-type(5){animation-delay:.38s}
+.hub-stage .node i{position:relative;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;border:1px solid rgba(25,223,160,.32);background:radial-gradient(circle at 50% 38%,rgba(8,38,29,.94),rgba(4,8,7,.94));color:rgba(155,255,221,.82);font:700 9px/1 var(--mono);letter-spacing:.04em;box-shadow:0 0 0 5px rgba(4,8,7,.32),0 0 22px -6px rgba(25,223,160,.55);transition:border-color .5s ease,box-shadow .5s ease,color .5s ease,transform .5s cubic-bezier(.22,1,.36,1)}
+.hub-stage .node i:after{content:"";position:absolute;inset:-7px;border-radius:50%;border:1px solid rgba(25,223,160,.16);animation:hubPing 6.5s cubic-bezier(.2,.7,.2,1) infinite;pointer-events:none}
+.hub-stage .node:nth-of-type(2) i:after{animation-delay:1.4s}
+.hub-stage .node:nth-of-type(3) i:after{animation-delay:2.6s}
+.hub-stage .node:nth-of-type(4) i:after{animation-delay:3.8s}
+.hub-stage .node:nth-of-type(5) i:after{animation-delay:5s}
+.hub-stage .node span{font-size:9px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:rgba(232,251,245,.86);line-height:1.3;text-shadow:0 1px 3px rgba(2,5,4,1),0 1px 12px rgba(2,5,4,.98);transition:color .4s ease}
+.hub-stage .node:hover i,.hub-stage .node:focus-visible i,.hub-stage .node.is-live i{border-color:rgba(122,255,203,.9);color:#EAFFF7;transform:scale(1.14);box-shadow:0 0 0 6px rgba(8,122,88,.14),0 0 30px -2px rgba(25,223,160,.85),0 0 70px -10px rgba(122,255,203,.6)}
+.hub-stage .node:hover span,.hub-stage .node:focus-visible span,.hub-stage .node.is-live span{color:#EAFFF7}
+.hub-stage .node.is-dim{opacity:.3;filter:saturate(.55)}
+.hub-stage .node.is-dim i:after{animation-play-state:paused}
+.hub-stage .node:focus-visible{outline:none}
+.hub-stage.is-paused .hub-atmos,.hub-stage.is-paused .hub-arch,.hub-stage.is-paused .hub-arch-glow,.hub-stage.is-paused .core:before,.hub-stage.is-paused .node,.hub-stage.is-paused .node i:after{animation-play-state:paused}
+@keyframes hubFloat{0%{translate:0 0}100%{translate:-5px 4px}}
+@keyframes hubAtmos{0%{transform:translate3d(0,0,0) scale(1);opacity:.85}100%{transform:translate3d(-8px,6px,0) scale(1.03);opacity:1}}
+@keyframes hubBreath{0%,100%{opacity:.55;transform:translate(-50%,-50%) scale(.94)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.06)}}
+@keyframes hubPing{0%{transform:scale(.82);opacity:0}18%{opacity:.55}55%{transform:scale(1.28);opacity:0}100%{transform:scale(1.28);opacity:0}}
+@keyframes hubNodeIn{from{translate:0 13px}to{translate:0 0}}
+@media(prefers-reduced-motion:reduce){.hub-atmos,.hub-arch,.hub-arch-glow,.hub-stage .core:before,.hub-stage .node i:after,.hub-stage.in-view .node{animation:none}.hub-stage .node,.hub-stage .node i{transition:none}.hub-arch-wrap{transition:none;transform:none}.hub-spotlight{display:none}}
+.hub-intro{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:clamp(34px,5vw,54px)}
+.hub-intro div{padding:22px 24px;background:var(--bg)}
+.hub-intro b{display:block;color:var(--em3);font:700 10px/1 var(--mono);letter-spacing:.16em;margin-bottom:10px}
+.hub-intro p{font-size:13.5px;color:var(--mut);line-height:1.55;max-width:26ch}
+.hub-list{display:grid;gap:14px;margin-top:clamp(34px,5vw,48px)}
+.hub-card{position:relative;display:grid;grid-template-columns:74px 1fr auto;gap:clamp(16px,2.6vw,32px);align-items:center;padding:clamp(20px,2.8vw,30px);border:1px solid var(--line);border-radius:20px;background:linear-gradient(120deg,rgba(10,16,14,.9),rgba(5,8,7,.5));transition:border-color .35s,background .35s,transform .35s;overflow:hidden}
+.hub-card:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(80% 120% at 100% 0,rgba(8,122,88,.16),transparent 60%);opacity:0;transition:opacity .4s}
+.hub-card:hover{border-color:rgba(25,223,160,.36);transform:translateY(-2px)}
+.hub-card:hover:before{opacity:1}
+.hub-glyph{position:relative;width:74px;height:74px;border-radius:18px;border:1px solid rgba(25,223,160,.24);background:radial-gradient(80% 80% at 30% 20%,rgba(8,122,88,.3),rgba(5,8,7,.6));display:grid;place-items:center;color:var(--em3)}
+.hub-glyph svg{width:34px;height:34px;overflow:visible}
+.hub-card h2{font-size:clamp(19px,2.2vw,25px);letter-spacing:-.02em}
+.hub-card p{font-size:14px;color:var(--mut);margin-top:7px;max-width:62ch}
+.hub-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.hub-tags span{font:600 9.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:rgba(25,223,160,.8);border:1px solid rgba(25,223,160,.22);border-radius:999px;padding:5px 8px}
+.hub-go{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);color:var(--em3);transition:.35s;flex:none}
+.hub-card:hover .hub-go{background:var(--em3);color:#03130e;border-color:transparent;transform:rotate(-45deg)}
+.hub-card.is-eco-live{border-color:rgba(25,223,160,.36);transform:translateY(-2px)}
+.hub-card.is-eco-live:before{opacity:1}
+.hub-approach{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(26px,4vw,56px);align-items:start}
+.hub-steps{display:grid;gap:0;border-top:1px solid var(--line)}
+.hub-step{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.hub-step b{font:700 11px/1.6 var(--mono);letter-spacing:.12em;color:var(--em3)}
+.hub-step h3{font-size:16.5px;margin-bottom:6px}
+.hub-step p{font-size:14px;color:var(--mut);max-width:54ch}
+/* ecosystem stage: five platforms, one core */
+#list .eco-top{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(26px,3.8vw,56px);align-items:center}
+#list .eco-top .sec-head{max-width:46ch;padding-bottom:4px}
+#list .eco-top .sec-head h2{margin-top:16px;font-size:clamp(30px,3.6vw,46px);line-height:1.08;max-width:18ch}
+#list .eco-top .sec-head .lead{font-size:clamp(15px,1.35vw,17px);margin-top:18px;max-width:42ch}
+.eco-stage{position:relative;width:100%;aspect-ratio:1.06/1;min-height:440px;border-radius:26px;border:1px solid rgba(25,223,160,.17);background:radial-gradient(66% 60% at 52% 44%,rgba(8,60,44,.34),transparent 72%),radial-gradient(100% 100% at 50% 100%,#06120e 0,#040a08 54%,#030705 100%);overflow:hidden;isolation:isolate;transform:translateZ(0);transition:border-color .6s ease,box-shadow .6s ease}
+.eco-stage:before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background-image:linear-gradient(rgba(25,223,160,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(25,223,160,.05) 1px,transparent 1px);background-size:42px 42px;-webkit-mask-image:radial-gradient(70% 62% at 52% 46%,#000,transparent 82%);mask-image:radial-gradient(70% 62% at 52% 46%,#000,transparent 82%);opacity:.5}
+.eco-stage:after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(108% 86% at 50% 44%,transparent 54%,rgba(2,5,4,.55) 100%),linear-gradient(0deg,rgba(2,4,3,.55),transparent 26%);transition:opacity .6s ease}
+.eco-stage:hover{border-color:rgba(25,223,160,.3);box-shadow:0 0 0 1px rgba(25,223,160,.05),0 24px 70px -40px rgba(25,223,160,.5)}
+.eco-canvas{position:absolute;inset:0;z-index:2;display:block;width:100%;height:100%;touch-action:pan-y;cursor:default}
+.eco-stage.is-hot .eco-canvas{cursor:pointer}
+.eco-fallback{position:absolute;inset:0;z-index:2;display:none;overflow:hidden}
+.eco-stage.no-webgl .eco-canvas{display:none}
+.eco-stage.no-webgl .eco-fallback{display:block}
+.eco-fb-lines{position:absolute;inset:0;width:100%;height:100%;z-index:0;fill:none;stroke:rgba(25,223,160,.34);stroke-width:.45;stroke-dasharray:1.4 2.6;filter:drop-shadow(0 0 3px rgba(25,223,160,.45))}
+.eco-fb-panel{position:absolute;z-index:2;margin:0;width:35%;aspect-ratio:1.339;border:1px solid rgba(25,223,160,.34);border-radius:9px;background:#04100c;overflow:hidden;box-shadow:0 16px 34px -18px #000,0 0 28px -12px rgba(25,223,160,.6);transform:perspective(700px) rotateY(0deg) rotateX(0deg)}
+.eco-fb-panel img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(1.08) brightness(.94)}
+.eco-fb-panel figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 7px 5px;font:700 6.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:rgba(122,255,203,.9);background:linear-gradient(0deg,rgba(2,7,5,.86),transparent)}
+.eco-fb-panel.p0{left:6%;top:12%;transform:perspective(700px) rotateY(11deg) rotateX(3deg)}
+.eco-fb-panel.p1{right:6%;top:10%;transform:perspective(700px) rotateY(-11deg) rotateX(3deg)}
+.eco-fb-panel.p2{left:4%;top:53%;transform:perspective(700px) rotateY(14deg) rotateX(-2deg)}
+.eco-fb-panel.p3{right:4%;top:51%;transform:perspective(700px) rotateY(-14deg) rotateX(-2deg)}
+.eco-fb-panel.p4{left:32.5%;bottom:3%;width:33%;transform:perspective(700px) translateZ(30px)}
+.eco-fb-hub{position:absolute;left:50%;top:44%;z-index:1;width:88px;height:88px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(122,255,203,.3),rgba(25,223,160,.12) 44%,transparent 70%);display:grid;place-items:center;box-shadow:0 0 60px rgba(25,223,160,.35)}
+.eco-fb-hub i{position:absolute;inset:10%;border:1px solid rgba(25,223,160,.5);border-radius:50%;transform:rotateX(62deg)}
+.eco-fb-hub i:nth-child(2){inset:24%;border-color:rgba(122,255,203,.55);transform:rotateX(62deg) rotateY(40deg)}
+.eco-fb-hub i:nth-child(3){inset:36%;border-color:rgba(122,255,203,.8);transform:none}
+.eco-fb-hub b{font:800 6px/1 var(--font);letter-spacing:.22em;color:#EAFFF7;text-shadow:0 0 12px rgba(25,223,160,.9)}
+.eco-hud{position:absolute;inset:0;z-index:4;pointer-events:none;color:rgba(122,255,203,.68);font:700 7.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase}
+.eco-code{position:absolute;left:18px;top:16px;opacity:.7}
+.eco-live{position:absolute;right:18px;top:14px;display:inline-flex;align-items:center;gap:6px;letter-spacing:.16em;color:rgba(122,255,203,.82)}
+.eco-live i{width:4px;height:4px;border-radius:50%;background:var(--em3);box-shadow:0 0 8px var(--em3);animation:ecoLive 2.6s ease-in-out infinite}
+.eco-c{position:absolute;width:11px;height:11px;border:1px solid rgba(25,223,160,.38)}
+.eco-c.tl{left:10px;top:9px;border-right:0;border-bottom:0}
+.eco-c.tr{right:10px;top:9px;border-left:0;border-bottom:0}
+.eco-c.bl{left:10px;bottom:9px;border-right:0;border-top:0}
+.eco-c.br{right:10px;bottom:9px;border-left:0;border-top:0}
+.eco-tags{position:absolute;inset:0;z-index:5;pointer-events:none}
+.eco-tag{position:absolute;left:var(--tx,50%);top:var(--ty,50%);transform:translate(-50%,-50%);display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border:1px solid rgba(25,223,160,.24);border-radius:999px;background:rgba(3,9,7,.68);-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);color:rgba(232,251,245,.78);font:700 8px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;text-decoration:none;white-space:nowrap;pointer-events:auto;box-shadow:0 8px 22px -14px #000;transition:color .35s ease,border-color .35s ease,background .35s ease,opacity .35s ease,box-shadow .35s ease}
+.eco-tag b{font-size:7px;color:rgba(25,223,160,.9);transition:color .35s ease}
+.eco-tag:nth-child(1){--tx:17%;--ty:25%}
+.eco-tag:nth-child(2){--tx:83%;--ty:22%}
+.eco-tag:nth-child(3){--tx:13%;--ty:61%}
+.eco-tag:nth-child(4){--tx:87%;--ty:58%}
+.eco-tag:nth-child(5){--tx:50%;--ty:88%}
+.eco-tag:hover,.eco-tag:focus-visible,.eco-tag.is-live{border-color:rgba(25,223,160,.66);background:rgba(4,20,15,.9);color:#EAFFF7;box-shadow:0 0 0 1px rgba(25,223,160,.12),0 0 26px -6px rgba(25,223,160,.7)}
+.eco-tag:hover b,.eco-tag:focus-visible b,.eco-tag.is-live b{color:var(--mint)}
+.eco-tag.is-dim{opacity:.34}
+.eco-stage.is-focused:after{opacity:.88}
+@keyframes ecoLive{0%,100%{opacity:.45;box-shadow:0 0 4px var(--em3)}50%{opacity:1;box-shadow:0 0 12px var(--em3)}}
+@media(max-width:960px){
+ #list .eco-top{grid-template-columns:1fr;gap:clamp(24px,4vw,36px)}
+ #list .eco-top .sec-head{max-width:62ch;padding-bottom:0}
+ #list .eco-top .sec-head h2{max-width:20ch}
+ #list .eco-top .sec-head .lead{max-width:56ch}
+ .eco-stage{max-width:660px;margin:0 auto;aspect-ratio:1.12/1;min-height:0}
+}
+@media(max-width:560px){
+ #list .eco-top .sec-head h2{font-size:clamp(28px,7.4vw,36px);max-width:19ch}
+ .eco-stage{aspect-ratio:1/.94;border-radius:20px}
+ .eco-code{left:14px;top:13px;font-size:6px;letter-spacing:.14em}
+ .eco-live{right:14px;top:12px;font-size:6px}
+ .eco-tag{padding:4px 7px;gap:4px;font-size:6.5px;letter-spacing:.07em}
+ .eco-tag b{font-size:6px}
+ .eco-c{width:8px;height:8px}
+ .eco-fb-panel figcaption{font-size:5.5px;padding:12px 5px 4px}
+ .eco-fb-hub{width:64px;height:64px}
+}
+@media(prefers-reduced-motion:reduce){
+ .eco-stage,.eco-tag{transition:none}
+ .eco-live i{animation:none}
+}
+@media(hover:none){.eco-canvas{cursor:default}}
+@media(max-width:960px){.hub-grid{grid-template-columns:1fr}.hub-stage{max-width:520px;width:100%;margin:auto}.hub-arch-wrap{transform:none;transition:none}.hub-spotlight{display:none}.hub-intro{grid-template-columns:1fr}.hub-approach{grid-template-columns:1fr}.hub-card{grid-template-columns:58px 1fr}.hub-go{display:none}.hub-glyph{width:58px;height:58px}.hub-glyph svg{width:28px;height:28px}}
+@media(max-width:560px){.hub-card{grid-template-columns:1fr;gap:14px}.hub-glyph{width:48px;height:48px}.hub-intro div{padding:18px}.hub-stage{aspect-ratio:1/.96;border-radius:20px}.hub-stage .node{width:72px;gap:6px}.hub-stage .node i{width:28px;height:28px;font-size:8px}.hub-stage .node span{font-size:8px;letter-spacing:.08em}.hub-stage .core b{font-size:16px}.hub-stage.in-view .hub-arch{opacity:.46}.hub-stage.in-view .hub-arch-glow{opacity:.22}}
+@media(hover:none){.hub-spotlight{display:none}.hub-arch-wrap{transform:none;transition:none}.hub-stage .node:hover i{transform:none}}
+</style>
+</head>
+<body data-industry="Отраслевые решения">
+<header id="hd"><div class="wrap nav">
+<a href="/" class="logo" aria-label="KINETIA — на главную"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="kstarNav" x1="5.8" y1="27" x2="26.2" y2="5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#087A58"/><stop offset=".5" stop-color="#19DFA0"/><stop offset="1" stop-color="#7AFFCB"/></linearGradient><radialGradient id="kstarCoreNav" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#F2FFFA"/><stop offset=".55" stop-color="#9BFFDD"/><stop offset="1" stop-color="#7AFFCB" stop-opacity="0"/></radialGradient></defs><path d="M16 3.6 18.19 13.81 26.2 16 18.19 18.19 16 28.4 13.81 18.19 5.8 16 13.81 13.81Z" fill="url(#kstarNav)"/><path d="M16 13.8 18.2 16 16 18.2 13.8 16Z" fill="url(#kstarCoreNav)"/></svg>KINETIA</a>
+<ul><li><a href="/#services">Услуги</a></li><li><a href="/industries" aria-current="page">Решения</a></li><li><a href="/#results">Результаты</a></li><li><a href="/#faq">FAQ</a></li></ul>
+<a class="btn pri" href="/#form">Обсудить проект</a>
+<button class="burger" id="bg" aria-label="Меню" aria-expanded="false"><i></i><i></i></button>
+</div></header>
+<nav class="menu" id="mn" aria-label="Мобильное меню">
+<a href="/#services">Услуги</a><a href="/industries">Решения</a><a href="/#results">Результаты</a><a href="/#faq">FAQ</a><a href="/#form">Обсудить проект</a>
+<div class="menu-sub"><a href="/industries/beauty">Beauty</a><a href="/industries/dentistry">Dentistry</a><a href="/industries/construction">Construction</a><a href="/industries/auto">Auto</a><a href="/industries/ecommerce">E-commerce</a></div>
+</nav>
+
+<main>
+<nav class="crumbs wrap" aria-label="Хлебные крошки"><a href="/">Главная</a><span class="sep">/</span><span>Решения для отраслей</span></nav>
+
+<section class="hub-hero"><div class="wrap">
+<div class="hub-grid">
+<div>
+<p class="kicker" data-anim>Industry Solutions</p>
+<h1 data-anim>Digital-системы для конкретных отраслей.</h1>
+<p class="lead" data-anim>Один и тот же набор инструментов работает по-разному. В салоне красоты важна запись и возврат клиента, в строительстве — длинный цикл сделки и смета, в интернет-магазине — повторные покупки. Мы начинаем с процессов ниши, а не с шаблона.</p>
+<div class="hub-ctas" data-anim><a class="btn pri" href="/#form">Получить консультацию<span class="arw">→</span></a><a class="btn sec" href="/#services">Смотреть услуги</a></div>
+</div>
+<div class="hub-stage" id="hubStage" data-anim="fade">
+<div class="hub-atmos" aria-hidden="true"></div>
+<div class="hub-arch-wrap" aria-hidden="true">
+<img class="hub-arch-glow" src="/industries/assets/hub-arch.webp" alt="" width="1120" height="962" decoding="async">
+<img class="hub-arch" src="/industries/assets/hub-arch.webp" alt="" width="1120" height="962" decoding="async">
+</div>
+<span class="hub-spotlight" aria-hidden="true"></span>
+<canvas id="hubviz" aria-hidden="true"></canvas>
+<div class="core" aria-hidden="true"><b>One System</b><span>Industry Layer</span></div>
+<a class="node" data-ind="0" href="/industries/beauty" style="left:22%;top:24%"><i>01</i><span>Beauty</span></a>
+<a class="node" data-ind="1" href="/industries/dentistry" style="left:78%;top:22%"><i>02</i><span>Dentistry</span></a>
+<a class="node" data-ind="2" href="/industries/construction" style="left:82%;top:70%"><i>03</i><span>Construction</span></a>
+<a class="node" data-ind="3" href="/industries/auto" style="left:18%;top:72%"><i>04</i><span>Auto</span></a>
+<a class="node" data-ind="4" href="/industries/ecommerce" style="left:50%;top:88%"><i>05</i><span>E-commerce</span></a>
+</div>
+</div>
+<div class="hub-intro" data-anim>
+<div><b>01 / ДИАГНОСТИКА</b><p>Разбираем, как в нише появляется клиент и где теряется заявка.</p></div>
+<div><b>02 / СБОРКА</b><p>Соединяем сайт, трафик, CRM и автоматизацию в один маршрут.</p></div>
+<div><b>03 / УПРАВЛЕНИЕ</b><p>Оставляем прозрачные этапы и точки контроля вместо ручного хаоса.</p></div>
+</div>
+</div></section>
+
+<section id="list"><div class="wrap">
+<div class="eco-top">
+<div class="sec-head" data-anim>
+<p class="kicker">Пять направлений</p>
+<h2>Выберите отрасль — увидите свою систему.</h2>
+<p class="lead">На каждой странице — проблемы ниши, концепция сайта, интерактивная 3D-схема трафика, демонстрационная CRM и пример стратегии. Без выдуманных кейсов и обещанных цифр.</p>
+</div>
+
+<div class="eco-stage" id="ecoStage" role="group" aria-label="Интерактивная карта пяти отраслевых систем KINETIA" data-anim="fade">
+<div class="eco-fallback" aria-hidden="true">
+<svg class="eco-fb-lines" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 44 18 26M50 44 82 24M50 44 14 66M50 44 86 62M50 44 50 83"/></svg>
+<figure class="eco-fb-panel p0"><img src="/industries/assets/eco-beauty.webp" alt="" width="896" height="669" decoding="async"><figcaption>01 / Beauty</figcaption></figure>
+<figure class="eco-fb-panel p1"><img src="/industries/assets/eco-dentistry.webp" alt="" width="896" height="669" decoding="async"><figcaption>02 / Dentistry</figcaption></figure>
+<figure class="eco-fb-panel p2"><img src="/industries/assets/eco-construction.webp" alt="" width="896" height="669" decoding="async"><figcaption>03 / Construction</figcaption></figure>
+<figure class="eco-fb-panel p3"><img src="/industries/assets/eco-auto.webp" alt="" width="896" height="669" decoding="async"><figcaption>04 / Automotive</figcaption></figure>
+<figure class="eco-fb-panel p4"><img src="/industries/assets/eco-ecommerce.webp" alt="" width="896" height="669" decoding="async"><figcaption>05 / E-commerce</figcaption></figure>
+<div class="eco-fb-hub"><i></i><i></i><i></i><b>KINETIA</b></div>
+</div>
+<canvas class="eco-canvas" id="ecoCanvas" aria-hidden="true"></canvas>
+<div class="eco-hud" aria-hidden="true">
+<span class="eco-code">KINETIA // INDUSTRY ECOSYSTEM</span>
+<span class="eco-live"><i></i>LIVE MAP</span>
+<i class="eco-c tl"></i><i class="eco-c tr"></i><i class="eco-c bl"></i><i class="eco-c br"></i>
+</div>
+<div class="eco-tags">
+<a class="eco-tag" href="/industries/beauty" data-ind="0"><b>01</b><span>Beauty</span></a>
+<a class="eco-tag" href="/industries/dentistry" data-ind="1"><b>02</b><span>Dentistry</span></a>
+<a class="eco-tag" href="/industries/construction" data-ind="2"><b>03</b><span>Construction</span></a>
+<a class="eco-tag" href="/industries/auto" data-ind="3"><b>04</b><span>Automotive</span></a>
+<a class="eco-tag" href="/industries/ecommerce" data-ind="4"><b>05</b><span>E-commerce</span></a>
+</div>
+</div>
+</div>
+
+<div class="hub-list">
+<a class="hub-card" href="/industries/beauty" data-ind="0" data-anim>
+<span class="hub-glyph" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="13"/><circle cx="20" cy="20" r="7.5" opacity=".6"/><path d="M20 4v6M20 30v6M4 20h6M30 20h6"/></svg></span>
+<div><h2>Салоны красоты и косметология</h2><p>Запись без переписок, напоминания, возврат клиентов и понятная загрузка мастеров.</p><div class="hub-tags"><span>booking</span><span>local SEO</span><span>retention</span></div></div>
+<span class="hub-go" aria-hidden="true">→</span>
+</a>
+<a class="hub-card" href="/industries/dentistry" data-ind="1" data-anim>
+<span class="hub-glyph" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M13 6c-4 0-6 3-6 7 0 6 3 9 4 15 .5 3 3.5 3 4 0 .6-4 1-8 5-8s4.4 4 5 8c.5 3 3.5 3 4 0 1-6 4-9 4-15 0-4-2-7-6-7-2 0-3 1-5 1s-3-1-5-1Z"/><path d="M15 14c2 2 8 2 10 0" opacity=".6"/></svg></span>
+<div><h2>Стоматологии и клиники</h2><p>Длинный выбор, доверие до звонка и распределение обращений по услугам и врачам.</p><div class="hub-tags"><span>trust</span><span>routing</span><span>content</span></div></div>
+<span class="hub-go" aria-hidden="true">→</span>
+</a>
+<a class="hub-card" href="/industries/construction" data-ind="2" data-anim>
+<span class="hub-glyph" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 34h28M10 34V18l10-8 10 8v16"/><path d="M16 34V24h8v10" opacity=".6"/><path d="M4 18 20 6l16 12" opacity=".5"/></svg></span>
+<div><h2>Строительные компании</h2><p>Дорогая заявка, долгое решение и смета, которую нужно собрать без потерь.</p><div class="hub-tags"><span>b2b</span><span>estimate</span><span>portfolio</span></div></div>
+<span class="hub-go" aria-hidden="true">→</span>
+</a>
+<a class="hub-card" href="/industries/auto" data-ind="3" data-anim>
+<span class="hub-glyph" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 25h26M10 25l2-7h16l2 7"/><path d="M13 25v5M27 25v5"/><circle cx="13" cy="20" r="1.6" fill="currentColor" stroke="none"/><path d="M20 6v6M14 9l3 4M26 9l-3 4" opacity=".55"/></svg></span>
+<div><h2>Автосервисы и детейлинг</h2><p>Загрузка боксов, повторные визиты и заявки, которые не теряются в телефоне.</p><div class="hub-tags"><span>local</span><span>booking</span><span>repeat</span></div></div>
+<span class="hub-go" aria-hidden="true">→</span>
+</a>
+<a class="hub-card" href="/industries/ecommerce" data-ind="4" data-anim>
+<span class="hub-glyph" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 13h24l-2 18H10L8 13Z"/><path d="M15 13a5 5 0 0 1 10 0" opacity=".7"/><path d="M15 22h10" opacity=".5"/></svg></span>
+<div><h2>Интернет-магазины</h2><p>Трафик дорожает, корзина пустеет. Собираем путь от карточки до повторного заказа.</p><div class="hub-tags"><span>feed</span><span>cart</span><span>ltv</span></div></div>
+<span class="hub-go" aria-hidden="true">→</span>
+</a>
+</div>
+</div></section>
+
+<section id="approach"><div class="wrap">
+<div class="hub-approach">
+<div class="sec-head" data-anim>
+<p class="kicker">Принцип работы</p>
+<h2>Отрасль задаёт процесс. Процесс задаёт инструменты.</h2>
+<p class="lead">Мы не продаём одинаковый пакет пяти разным бизнесам. Сначала описываем, как у вас появляется и закрывается клиент, затем собираем минимальную систему, которая это выдерживает.</p>
+<a class="btn sec" href="/#process" style="margin-top:26px">Как мы работаем</a>
+</div>
+<div class="hub-steps">
+<div class="hub-step" data-anim><b>01</b><div><h3>Карта клиентского пути</h3><p>Где человек узнаёт о вас, что читает, в какой момент оставляет контакт и что происходит дальше.</p></div></div>
+<div class="hub-step" data-anim><b>02</b><div><h3>Точки потерь</h3><p>Медленный ответ, неудобная запись, отсутствие напоминаний, ручное перекладывание заявок.</p></div></div>
+<div class="hub-step" data-anim><b>03</b><div><h3>Состав системы</h3><p>Сайт, реклама, CRM, автоматизация и аналитика — только те элементы, которые закрывают потери.</p></div></div>
+<div class="hub-step" data-anim><b>04</b><div><h3>Запуск и контроль</h3><p>Этапы, сроки и точки приёмки фиксируем до старта. Дальше — улучшения по фактическим данным.</p></div></div>
+</div>
+</div>
+</div></section>
+
+<section id="cta"><div class="wrap">
+<div class="cta-band" data-anim>
+<div class="cta-row">
+<div><h2>Не нашли свою отрасль?</h2><p>Опишите задачу — скажем прямо, подходит ли вам отраслевой сценарий или нужен индивидуальный разбор.</p></div>
+<a class="btn pri" href="/#form">Обсудить проект<span class="arw">→</span></a>
+</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="fgrid">
+<div><a href="/" class="logo" aria-label="KINETIA — на главную"><svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="kstarFoot" x1="5.8" y1="27" x2="26.2" y2="5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#087A58"/><stop offset=".5" stop-color="#19DFA0"/><stop offset="1" stop-color="#7AFFCB"/></linearGradient></defs><path d="M16 3.6 18.19 13.81 26.2 16 18.19 18.19 16 28.4 13.81 18.19 5.8 16 13.81 13.81Z" fill="url(#kstarFoot)"/><path d="M16 13.8 18.2 16 16 18.2 13.8 16Z" fill="#F2FFFA"/></svg>KINETIA</a><p>Digital Growth Agency.<br>Создаём движение. Системно развиваем бизнес.</p></div>
+<ul><li><a href="/">Главная</a></li><li><a href="/#services">Услуги</a></li><li><a href="/#process">Процесс</a></li><li><a href="/#results">Результаты</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#form">Контакты</a></li></ul>
+<ul><li><a href="/industries">Все решения</a></li><li><a href="/industries/beauty">Beauty</a></li><li><a href="/industries/dentistry">Dentistry</a></li><li><a href="/industries/construction">Construction</a></li><li><a href="/industries/auto">Auto</a></li><li><a href="/industries/ecommerce">E-commerce</a></li><li><a href="/privacy-policy">Политика конфиденциальности</a></li></ul>
+</div>
+<div class="fniche"><b>Отрасли</b><a href="/industries/beauty">Салоны красоты</a><a href="/industries/dentistry">Стоматологии</a><a href="/industries/construction">Строительство</a><a href="/industries/auto">Автосервисы</a><a href="/industries/ecommerce">E-commerce</a></div>
+<p class="copy">© <span data-year>2026</span> KINETIA. All rights reserved.</p>
+</div></footer>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Industry Solutions — решения для отраслей бизнеса","inLanguage":"ru","description":"Отраслевые digital-решения KINETIA для салонов красоты, стоматологий, строительных компаний, автосервисов и интернет-магазинов.","isPartOf":{"@type":"WebSite","name":"KINETIA"},"mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Салоны красоты и косметология","url":"/industries/beauty"},{"@type":"ListItem","position":2,"name":"Стоматологии и клиники","url":"/industries/dentistry"},{"@type":"ListItem","position":3,"name":"Строительные компании","url":"/industries/construction"},{"@type":"ListItem","position":4,"name":"Автосервисы и детейлинг","url":"/industries/auto"},{"@type":"ListItem","position":5,"name":"Интернет-магазины","url":"/industries/ecommerce"}]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"/"},{"@type":"ListItem","position":2,"name":"Решения для отраслей","item":"/industries"}]}</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="/industries/assets/base.js"></script>
+<script>
+(function(){
+  'use strict';
+  var stage=document.getElementById('hubStage');
+  if(!stage) return;
+  var cv=document.getElementById('hubviz');
+  var ctx=cv&&cv.getContext?cv.getContext('2d'):null;
+  var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var CAN_HOVER=matchMedia('(hover:hover) and (pointer:fine)').matches;
+  var FINE=CAN_HOVER&&!RM;
+  var P=[[.22,.24],[.78,.22],[.82,.70],[.18,.72],[.50,.88]];
+  var C=[.50,.47];
+  var nodes=[].slice.call(stage.querySelectorAll('.node[data-ind]'));
+  var cards=[].slice.call(document.querySelectorAll('.hub-card[data-ind]'));
+  var active=-1,W=0,H=0,dpr=1,raf=null,vis=false,last=0;
+  stage.classList.add('is-paused');
+
+  /* ---- progressive section reveal ---- */
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      if(!es[0].isIntersecting) return;
+      stage.classList.add('in-view');
+      io.disconnect();
+    },{threshold:.18});
+    io.observe(stage);
+  }else stage.classList.add('in-view');
+  if(RM) stage.classList.add('in-view');
+
+  /* ---- geometry helpers ---- */
+  function ctrl(i,w,h){
+    var ax=C[0]*w,ay=C[1]*h,bx=P[i][0]*w,by=P[i][1]*h;
+    var dx=bx-ax,dy=by-ay,len=Math.sqrt(dx*dx+dy*dy)||1;
+    var off=(i%2?1:-1)*len*.075;
+    return [(ax+bx)/2-dy/len*off,(ay+by)/2+dx/len*off];
+  }
+  function qp(x0,y0,cx,cy,x1,y1,t){
+    var u=1-t;
+    return [u*u*x0+2*u*t*cx+t*t*x1,u*u*y0+2*u*t*cy+t*t*y1];
+  }
+
+  /* ---- canvas ---- */
+  function resize(){
+    if(!cv) return;
+    var r=stage.getBoundingClientRect();
+    if(!r.width||!r.height) return;
+    dpr=Math.min(window.devicePixelRatio||1,1.75);
+    W=r.width;H=r.height;
+    cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    if(RM) draw(0);
+  }
+
+  function draw(t){
+    if(!ctx||!W||!H) return;
+    var w=W,h=H,m=Math.min(w,h);
+    var cx=C[0]*w,cy=C[1]*h;
+    ctx.clearRect(0,0,w,h);
+    ctx.lineCap='round';
+
+    /* ambient dust */
+    for(var d=0;d<26;d++){
+      var s1=(d*127.13)%1,s2=(d*311.7)%1,s3=(d*73.3)%1;
+      var dx=((s1+w*0.001*t*(s3-.5))%1+1)%1*w;
+      var dy=((s2-t*(.004+s3*.006))%1+1)%1*h;
+      ctx.fillStyle='rgba(122,255,203,'+(.05+s3*.11)+')';
+      ctx.beginPath();ctx.arc(dx,dy,.6+s3*1.1,0,6.2832);ctx.fill();
+    }
+
+    /* faint inter-industry arcs */
+    ctx.save();
+    ctx.setLineDash([2,7]);
+    ctx.lineDashOffset=-t*9;
+    ctx.lineWidth=1;
+    for(var a=0;a<5;a++){
+      var b=(a+1)%5;
+      var ax=P[a][0]*w,ay=P[a][1]*h,bx=P[b][0]*w,by=P[b][1]*h;
+      var mx=(ax+bx)/2,my=(ay+by)/2;
+      var ox=mx-cx,oy=my-cy,ol=Math.sqrt(ox*ox+oy*oy)||1;
+      var bow=.22*Math.sqrt((bx-ax)*(bx-ax)+(by-ay)*(by-ay));
+      var dim=(active>=0&&a!==active&&b!==active)?.35:1;
+      ctx.strokeStyle='rgba(25,223,160,'+(.10*dim*(.7+.3*Math.sin(t*.35+a)))+')';
+      ctx.beginPath();ctx.moveTo(ax,ay);
+      ctx.quadraticCurveTo(mx+ox/ol*bow,my+oy/ol*bow,bx,by);ctx.stroke();
+    }
+    ctx.restore();
+
+    /* core to industry links + travelling light */
+    for(var i=0;i<5;i++){
+      var c=ctrl(i,w,h);
+      var nx=P[i][0]*w,ny=P[i][1]*h;
+      var on=active<0||active===i;
+      var fade=on?1:.26;
+      var g=ctx.createLinearGradient(cx,cy,nx,ny);
+      g.addColorStop(0,'rgba(25,223,160,'+(.30*fade)+')');
+      g.addColorStop(.55,'rgba(25,223,160,'+(.17*fade)+')');
+      g.addColorStop(1,'rgba(122,255,203,'+(.10*fade)+')');
+      ctx.strokeStyle=g;
+      ctx.lineWidth=active===i?1.6:1;
+      if(active===i){ctx.shadowColor='rgba(25,223,160,.7)';ctx.shadowBlur=9;}
+      ctx.beginPath();ctx.moveTo(cx,cy);ctx.quadraticCurveTo(c[0],c[1],nx,ny);ctx.stroke();
+      ctx.shadowBlur=0;
+
+      var count=active===i?3:2;
+      for(var k=0;k<count;k++){
+        var speed=active===i?.30:.10;
+        var tt=((t*speed+i*.19+k/ (count+1))%1+1)%1;
+        var pt=qp(cx,cy,c[0],c[1],nx,ny,tt);
+        var pt2=qp(cx,cy,c[0],c[1],nx,ny,Math.max(0,tt-.05));
+        var pa=on?(active===i?.85:.5):.18;
+        ctx.strokeStyle='rgba(122,255,203,'+(pa*.55)+')';
+        ctx.lineWidth=1;
+        ctx.beginPath();ctx.moveTo(pt2[0],pt2[1]);ctx.lineTo(pt[0],pt[1]);ctx.stroke();
+        ctx.fillStyle='rgba(200,255,233,'+pa+')';
+        ctx.beginPath();ctx.arc(pt[0],pt[1],active===i?2.1:1.5,0,6.2832);ctx.fill();
+        if(active===i){
+          ctx.fillStyle='rgba(25,223,160,.2)';
+          ctx.beginPath();ctx.arc(pt[0],pt[1],7,0,6.2832);ctx.fill();
+        }
+      }
+    }
+
+    /* breathing core rings */
+    var breath=.5+.5*Math.sin(t*.85);
+    for(var j=0;j<3;j++){
+      var rr=m*(.055+j*.038)*(.96+breath*.05);
+      ctx.strokeStyle='rgba(25,223,160,'+(.16-j*.04)+')';
+      ctx.lineWidth=1;
+      ctx.beginPath();ctx.arc(cx,cy,rr,0,6.2832);ctx.stroke();
+    }
+    ctx.fillStyle='rgba(25,223,160,'+(.14+breath*.14)+')';
+    ctx.beginPath();ctx.arc(cx,cy,m*.035,0,6.2832);ctx.fill();
+
+    /* slow outward pulse */
+    var ph=(t%5.6)/5.6;
+    ctx.strokeStyle='rgba(122,255,203,'+((1-ph)*(1-ph)*.34)+')';
+    ctx.lineWidth=1.2;
+    ctx.beginPath();ctx.arc(cx,cy,m*(.05+ph*.34),0,6.2832);ctx.stroke();
+
+    /* active module halo on canvas */
+    if(active>=0){
+      var hx=P[active][0]*w,hy=P[active][1]*h;
+      var hg=ctx.createRadialGradient(hx,hy,0,hx,hy,m*.14);
+      hg.addColorStop(0,'rgba(25,223,160,.20)');
+      hg.addColorStop(1,'rgba(25,223,160,0)');
+      ctx.fillStyle=hg;
+      ctx.beginPath();ctx.arc(hx,hy,m*.14,0,6.2832);ctx.fill();
+    }
+  }
+
+  function tick(now){
+    if(!vis){raf=null;return;}
+    draw(now/1000);
+    raf=requestAnimationFrame(tick);
+  }
+  function start(){ if(RM||raf||!vis) return; last=performance.now(); raf=requestAnimationFrame(tick); }
+  function stop(){ if(raf){cancelAnimationFrame(raf);raf=null;} }
+
+  if(ctx){
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){
+        vis=es[0].isIntersecting;
+        stage.classList.toggle('is-paused',!vis);
+        if(vis) start(); else stop();
+      },{threshold:0}).observe(stage);
+    }else{vis=true;stage.classList.remove('is-paused');start();}
+    if('ResizeObserver' in window) new ResizeObserver(resize).observe(stage);
+    else addEventListener('resize',resize,{passive:true});
+    resize();
+    document.addEventListener('visibilitychange',function(){
+      if(document.hidden){stop();stage.classList.add('is-paused');}
+      else if(vis){stage.classList.remove('is-paused');start();}
+    });
+  }
+
+  /* ---- industry highlight ---- */
+  function setActive(i){
+    if(i===active) return;
+    active=i;
+    stage.classList.toggle('is-focused',i>=0);
+    nodes.forEach(function(n,k){
+      n.classList.toggle('is-live',k===i);
+      n.classList.toggle('is-dim',i>=0&&k!==i);
+    });
+    if(i>=0){
+      stage.style.setProperty('--mx',(P[i][0]*100)+'%');
+      stage.style.setProperty('--my',(P[i][1]*100)+'%');
+    }else if(!stage.matches(':hover')){
+      stage.style.setProperty('--mx','50%');
+      stage.style.setProperty('--my','46%');
+    }
+    if(RM) draw(0);
+  }
+  if(CAN_HOVER){
+    cards.forEach(function(c){
+      var i=parseInt(c.getAttribute('data-ind'),10);
+      c.addEventListener('pointerenter',function(){setActive(i);});
+      c.addEventListener('pointerleave',function(){setActive(-1);});
+    });
+    nodes.forEach(function(n){
+      var i=parseInt(n.getAttribute('data-ind'),10);
+      n.addEventListener('pointerenter',function(){setActive(i);});
+      n.addEventListener('pointerleave',function(){setActive(-1);});
+    });
+  }
+  cards.forEach(function(c){
+    var i=parseInt(c.getAttribute('data-ind'),10);
+    c.addEventListener('focusin',function(){setActive(i);});
+    c.addEventListener('focusout',function(e){
+      if(!c.contains(e.relatedTarget)) setActive(-1);
+    });
+  });
+  nodes.forEach(function(n){
+    var i=parseInt(n.getAttribute('data-ind'),10);
+    n.addEventListener('focus',function(){setActive(i);});
+    n.addEventListener('blur',function(){setActive(-1);});
+  });
+
+  /* ---- cursor parallax + localised glow ---- */
+  if(FINE&&innerWidth>960){
+    var setPos=function(e){
+      var r=stage.getBoundingClientRect();
+      var x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+      if(x<-.1||x>1.1||y<-.1||y>1.1) return;
+      stage.style.setProperty('--px',(x-.5).toFixed(3));
+      stage.style.setProperty('--py',(y-.5).toFixed(3));
+      if(active<0){
+        stage.style.setProperty('--mx',(x*100).toFixed(2)+'%');
+        stage.style.setProperty('--my',(y*100).toFixed(2)+'%');
+      }
+    };
+    stage.addEventListener('pointermove',setPos,{passive:true});
+    stage.addEventListener('pointerleave',function(){
+      stage.style.setProperty('--px','0');
+      stage.style.setProperty('--py','0');
+      if(active<0){
+        stage.style.setProperty('--mx','50%');
+        stage.style.setProperty('--my','46%');
+      }
+    });
+  }
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script>
+(function(){
+  'use strict';
+  var stage=document.getElementById('ecoStage');
+  if(!stage) return;
+  var canvas=document.getElementById('ecoCanvas');
+  var cards=[].slice.call(document.querySelectorAll('.hub-card[data-ind]'));
+  var tags=[].slice.call(stage.querySelectorAll('.eco-tag'));
+  var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var FINE=matchMedia('(hover:hover) and (pointer:fine)').matches;
+  var DATA=[
+    {name:'Beauty',route:'/industries/beauty',img:'/industries/assets/eco-beauty.webp',pos:[-3.05,.95,-.55],rot:.26,scale:1},
+    {name:'Dentistry',route:'/industries/dentistry',img:'/industries/assets/eco-dentistry.webp',pos:[3.00,1.12,-.80],rot:-.26,scale:1},
+    {name:'Construction',route:'/industries/construction',img:'/industries/assets/eco-construction.webp',pos:[-2.85,-.48,.75],rot:.34,scale:1},
+    {name:'Automotive',route:'/industries/auto',img:'/industries/assets/eco-auto.webp',pos:[2.86,-.36,.65],rot:-.34,scale:1},
+    {name:'E-commerce',route:'/industries/ecommerce',img:'/industries/assets/eco-ecommerce.webp',pos:[.15,-1.38,2.00],rot:.02,scale:.9}
+  ];
+  var active=-1;
+  var dead=false;
+
+  function applyUI(i){
+    active=i;
+    stage.classList.toggle('is-focused',i>=0);
+    tags.forEach(function(t,k){
+      t.classList.toggle('is-live',k===i);
+      t.classList.toggle('is-dim',i>=0&&k!==i);
+    });
+    cards.forEach(function(c,k){c.classList.toggle('is-eco-live',k===i);});
+  }
+  var setActive=function(i){if(i!==active) applyUI(i);};
+
+  function bindHover(el,i){
+    el.addEventListener('pointerenter',function(){setActive(i);});
+    el.addEventListener('pointerleave',function(){setActive(-1);});
+    el.addEventListener('focusin',function(){setActive(i);});
+    el.addEventListener('focusout',function(e){if(!el.contains(e.relatedTarget)) setActive(-1);});
+  }
+  tags.forEach(function(t){bindHover(t,parseInt(t.getAttribute('data-ind'),10));});
+  cards.forEach(function(c){bindHover(c,parseInt(c.getAttribute('data-ind'),10));});
+
+  if(!window.THREE){
+    stage.classList.add('no-webgl');
+    return;
+  }
+
+  var renderer;
+  try{
+    renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true,powerPreference:'high-performance'});
+  }catch(err){
+    stage.classList.add('no-webgl');
+    return;
+  }
+  renderer.setClearColor(0x000000,0);
+  renderer.outputColorSpace=THREE.SRGBColorSpace;
+  renderer.toneMapping=THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure=1.14;
+
+  var scene=new THREE.Scene();
+  scene.fog=new THREE.FogExp2(0x040907,.032);
+  var camera=new THREE.PerspectiveCamera(40,1,.1,80);
+  var baseY=1.85,baseZ=12.3;
+
+  scene.add(new THREE.AmbientLight(0x123b2d,1.5));
+  scene.add(new THREE.HemisphereLight(0x2affc0,0x020504,1.15));
+  var keyLight=new THREE.PointLight(0x9dffdd,46,26,2);
+  keyLight.position.set(4,5.5,6);scene.add(keyLight);
+  var fillLight=new THREE.PointLight(0x087a58,13,23,2);
+  fillLight.position.set(-5,2.2,4);scene.add(fillLight);
+  var rimLight=new THREE.DirectionalLight(0x19dfa0,2.4);
+  rimLight.position.set(-2,4,-7);scene.add(rimLight);
+
+  function glowTexture(){
+    var c=document.createElement('canvas');c.width=c.height=128;
+    var g=c.getContext('2d');
+    var grd=g.createRadialGradient(64,64,0,64,64,64);
+    grd.addColorStop(0,'rgba(235,255,247,.95)');
+    grd.addColorStop(.22,'rgba(122,255,203,.62)');
+    grd.addColorStop(.52,'rgba(25,223,160,.22)');
+    grd.addColorStop(1,'rgba(8,122,88,0)');
+    g.fillStyle=grd;g.fillRect(0,0,128,128);
+    var t=new THREE.CanvasTexture(c);
+    t.colorSpace=THREE.SRGBColorSpace;
+    return t;
+  }
+  function shadowTexture(){
+    var c=document.createElement('canvas');c.width=128;c.height=128;
+    var g=c.getContext('2d');
+    var grd=g.createRadialGradient(64,64,0,64,64,64);
+    grd.addColorStop(0,'rgba(0,0,0,.72)');
+    grd.addColorStop(.55,'rgba(0,0,0,.34)');
+    grd.addColorStop(1,'rgba(0,0,0,0)');
+    g.fillStyle=grd;g.fillRect(0,0,128,128);
+    var t=new THREE.CanvasTexture(c);
+    t.colorSpace=THREE.SRGBColorSpace;
+    return t;
+  }
+  function floorTexture(){
+    var c=document.createElement('canvas');c.width=c.height=512;
+    var g=c.getContext('2d');
+    var grd=g.createRadialGradient(256,266,0,256,266,256);
+    grd.addColorStop(0,'rgba(8,46,34,.96)');
+    grd.addColorStop(.34,'rgba(6,32,24,.84)');
+    grd.addColorStop(.66,'rgba(3,15,11,.44)');
+    grd.addColorStop(.86,'rgba(2,9,6,.18)');
+    grd.addColorStop(1,'rgba(2,7,5,0)');
+    g.fillStyle=grd;g.fillRect(0,0,512,512);
+    var t=new THREE.CanvasTexture(c);
+    t.colorSpace=THREE.SRGBColorSpace;
+    return t;
+  }
+  var glowTex=glowTexture();
+  var shadowTex=shadowTexture();
+  var floorTex=floorTexture();
+  var textures=[glowTex,shadowTex,floorTex];
+
+  var metal=new THREE.MeshStandardMaterial({color:0x081410,metalness:.9,roughness:.3});
+  var metalTop=new THREE.MeshStandardMaterial({color:0x0c241c,metalness:.62,roughness:.34});
+  var glassStrip=new THREE.MeshBasicMaterial({color:0x7affcb,transparent:true,opacity:.7,blending:THREE.AdditiveBlending,depthWrite:false});
+  var sheenMat=new THREE.MeshBasicMaterial({color:0x7affcb,transparent:true,opacity:.035,blending:THREE.AdditiveBlending,depthWrite:false});
+  var baseEdgeMat=new THREE.LineBasicMaterial({color:0x087a58,transparent:true,opacity:.38});
+  var contactMat=new THREE.MeshBasicMaterial({map:shadowTex,transparent:true,opacity:.5,depthWrite:false});
+
+  var floor=new THREE.Mesh(new THREE.PlaneGeometry(30,20),new THREE.MeshBasicMaterial({map:floorTex,transparent:true,opacity:.95,depthWrite:false,toneMapped:false}));
+  floor.rotation.x=-Math.PI/2;floor.position.y=-2.1;scene.add(floor);
+  var pool=new THREE.Mesh(new THREE.PlaneGeometry(12,9),new THREE.MeshBasicMaterial({map:glowTex,color:0x07503b,transparent:true,opacity:.16,blending:THREE.AdditiveBlending,depthWrite:false}));
+  pool.rotation.x=-Math.PI/2;pool.position.y=-2.07;scene.add(pool);
+
+  var baseGeo=new THREE.BoxGeometry(2.14,.11,1.54);
+  var topGeo=new THREE.BoxGeometry(1.9,.022,1.3);
+  var frameGeo=new THREE.BoxGeometry(2.04,1.5,.08);
+  var screenGeo=new THREE.PlaneGeometry(1.86,1.389);
+  var baseEdgesGeo=new THREE.EdgesGeometry(baseGeo);
+  var frameEdgesGeo=new THREE.EdgesGeometry(frameGeo);
+  var loader=new THREE.TextureLoader();
+
+  var modules=[],hitMeshes=[],travellers=[];
+  var links=[];
+
+  function makeModule(d,i){
+    var g=new THREE.Group();
+    g.position.set(d.pos[0],d.pos[1],d.pos[2]);
+    g.rotation.y=d.rot;
+    g.scale.setScalar(d.scale);
+    scene.add(g);
+
+    var base=new THREE.Mesh(baseGeo,metal);g.add(base);
+    var baseEdges=new THREE.LineSegments(baseEdgesGeo,baseEdgeMat);baseEdges.position.y=.002;g.add(baseEdges);
+    var top=new THREE.Mesh(topGeo,metalTop);top.position.y=.062;g.add(top);
+    var strip=new THREE.Mesh(new THREE.BoxGeometry(1.34,.018,.026),glassStrip);
+    strip.position.set(0,.078,.775);g.add(strip);
+
+    var frame=new THREE.Mesh(frameGeo,metal);frame.position.y=.84;g.add(frame);
+    var frameEdges=new THREE.LineSegments(frameEdgesGeo,new THREE.LineBasicMaterial({color:0x19dfa0,transparent:true,opacity:.32}));
+    frameEdges.position.y=.84;g.add(frameEdges);
+
+    var screenMat=new THREE.MeshBasicMaterial({color:0xffffff,toneMapped:false});
+    var screen=new THREE.Mesh(screenGeo,screenMat);
+    screen.position.set(0,.84,.047);screen.userData.index=i;g.add(screen);hitMeshes.push(screen);
+
+    var sheen=new THREE.Mesh(screenGeo,sheenMat);
+    sheen.position.set(0,.84,.052);g.add(sheen);
+
+    var lipMat=new THREE.MeshBasicMaterial({color:0x19dfa0,transparent:true,opacity:.16,blending:THREE.AdditiveBlending,depthWrite:false});
+    var lip=new THREE.Mesh(new THREE.BoxGeometry(2.0,.014,.02),lipMat);
+    lip.position.set(0,1.6,.05);g.add(lip);
+
+    var haloMat=new THREE.SpriteMaterial({map:glowTex,color:0x19dfa0,transparent:true,opacity:.14,blending:THREE.AdditiveBlending,depthWrite:false});
+    var halo=new THREE.Sprite(haloMat);
+    halo.position.set(0,.84,-.12);halo.scale.set(2.95,2.2,1);g.add(halo);
+
+    var shadow=new THREE.Mesh(new THREE.PlaneGeometry(2.8,1.95),contactMat);
+    shadow.rotation.x=-Math.PI/2;
+    shadow.position.set(d.pos[0],-2.065,d.pos[2]);
+    scene.add(shadow);
+
+    var tex=loader.load(d.img,function(t){
+      t.colorSpace=THREE.SRGBColorSpace;
+      t.anisotropy=Math.min(4,renderer.capabilities.getMaxAnisotropy());
+      t.needsUpdate=true;
+      if(!raf) renderOnce();
+    },undefined,function(){
+      screenMat.color.set(0x0a3a2c);
+      if(!raf) renderOnce();
+    });
+    tex.colorSpace=THREE.SRGBColorSpace;
+    screenMat.map=tex;
+    screenMat.needsUpdate=true;
+    textures.push(tex);
+
+    return {group:g,data:d,phase:i*1.7+.4,a:0,dd:0,edgeMat:frameEdges.material,screenMat:screenMat,lipMat:lipMat,haloMat:haloMat,tubeMat:null,curve:null};
+  }
+  DATA.forEach(function(d,i){modules.push(makeModule(d,i));});
+
+  /* ---- central hub ---- */
+  var hub=new THREE.Group();hub.position.set(0,.55,0);scene.add(hub);
+  var coreMat=new THREE.MeshStandardMaterial({color:0x0c3a2b,emissive:0x19dfa0,emissiveIntensity:2.4,metalness:.65,roughness:.24});
+  var core=new THREE.Mesh(new THREE.IcosahedronGeometry(.2,1),coreMat);hub.add(core);
+  var coreGlowMat=new THREE.SpriteMaterial({map:glowTex,color:0x7affcb,transparent:true,opacity:.55,blending:THREE.AdditiveBlending,depthWrite:false});
+  var coreGlow=new THREE.Sprite(coreGlowMat);coreGlow.scale.set(2.25,2.25,1);hub.add(coreGlow);
+  var beam=new THREE.Mesh(new THREE.CylinderGeometry(.028,.05,1.75,10,1,true),new THREE.MeshBasicMaterial({color:0x7affcb,transparent:true,opacity:.26,blending:THREE.AdditiveBlending,depthWrite:false}));
+  beam.position.y=.03;hub.add(beam);
+  var hubLight=new THREE.PointLight(0x19dfa0,26,14,2);hub.add(hubLight);
+  var rings=[];
+  [[.55,.05],[.82,.24],[1.05,-.18]].forEach(function(s,k){
+    var ring=new THREE.Mesh(new THREE.TorusGeometry(s[0],.009,6,72),new THREE.MeshBasicMaterial({color:k===1?0x7affcb:0x19dfa0,transparent:true,opacity:.34,blending:THREE.AdditiveBlending,depthWrite:false}));
+    ring.rotation.x=Math.PI/2;ring.position.y=s[1];hub.add(ring);rings.push(ring);
+  });
+  var gyro=new THREE.Mesh(new THREE.TorusGeometry(.63,.012,6,72),new THREE.MeshBasicMaterial({color:0x7affcb,transparent:true,opacity:.42,blending:THREE.AdditiveBlending,depthWrite:false}));
+  gyro.rotation.x=.45;gyro.rotation.z=.3;hub.add(gyro);
+  var pulses=[];
+  var pulseGeo=new THREE.RingGeometry(.5,.515,72);
+  for(var p=0;p<3;p++){
+    var pm=new THREE.MeshBasicMaterial({color:0x19dfa0,transparent:true,opacity:.3,side:THREE.DoubleSide,blending:THREE.AdditiveBlending,depthWrite:false});
+    var ring=new THREE.Mesh(pulseGeo,pm);ring.rotation.x=-Math.PI/2;hub.add(ring);pulses.push(ring);
+  }
+
+  /* ---- connections ---- */
+  var tmpV=new THREE.Vector3();
+  modules.forEach(function(m,i){
+    var end=new THREE.Vector3(m.data.pos[0],m.data.pos[1]+.84*m.data.scale,m.data.pos[2]+.1);
+    var mid=new THREE.Vector3(end.x*.5,Math.max(.55,end.y)+.78,end.z*.55);
+    var curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(0,.55,0),mid,end);
+    var tubeMat=new THREE.MeshBasicMaterial({color:0x19dfa0,transparent:true,opacity:.24,blending:THREE.AdditiveBlending,depthWrite:false});
+    var tube=new THREE.Mesh(new THREE.TubeGeometry(curve,40,.012,5,false),tubeMat);
+    scene.add(tube);
+    m.curve=curve;m.tubeMat=tubeMat;links.push(m);
+    var count=stage.clientWidth<640?1:2;
+    for(var k=0;k<count;k++){
+      var sm=new THREE.SpriteMaterial({map:glowTex,color:0xb7ffdf,transparent:true,opacity:.8,blending:THREE.AdditiveBlending,depthWrite:false});
+      var sp=new THREE.Sprite(sm);sp.scale.set(.09,.09,1);scene.add(sp);
+      travellers.push({sprite:sp,curve:curve,offset:i*.19+k/(count+1.2),link:i});
+    }
+  });
+
+  /* ---- atmosphere ---- */
+  var dustCount=stage.clientWidth<640?64:150;
+  var dpos=new Float32Array(dustCount*3);
+  for(var d=0;d<dustCount;d++){
+    dpos[d*3]=(Math.random()-.5)*13;
+    dpos[d*3+1]=-1.8+Math.random()*6.2;
+    dpos[d*3+2]=-2.4+Math.random()*6.2;
+  }
+  var dustGeo=new THREE.BufferGeometry();
+  dustGeo.setAttribute('position',new THREE.BufferAttribute(dpos,3));
+  var dustMat=new THREE.PointsMaterial({size:.065,map:glowTex,color:0x7affcb,transparent:true,opacity:.58,blending:THREE.AdditiveBlending,depthWrite:false,sizeAttenuation:true});
+  var dust=new THREE.Points(dustGeo,dustMat);scene.add(dust);
+  var bokeh=[];
+  [[-5.4,2.6,-3.4,3.2,.09],[5.1,1.7,-3.1,2.7,.08],[.6,3.6,-4.2,3.6,.06],[-2.9,-1.4,2.8,2.3,.05]].forEach(function(b){
+    var bm=new THREE.SpriteMaterial({map:glowTex,color:0x0e8a63,transparent:true,opacity:b[4],blending:THREE.AdditiveBlending,depthWrite:false});
+    var s=new THREE.Sprite(bm);s.position.set(b[0],b[1],b[2]);s.scale.set(b[3],b[3],1);scene.add(s);bokeh.push({sprite:s,base:b[4],phase:Math.random()*6.28});
+  });
+
+  var raycaster=new THREE.Raycaster();
+  var pointer=new THREE.Vector2();
+  var dimColor=new THREE.Color(0x60776d);
+  var startTime=performance.now();
+  var inView=false,raf=null,last=0;
+  var pointerX=0,pointerY=0,scrollShift=0;
+
+  function resize(){
+    var w=stage.clientWidth,h=stage.clientHeight;
+    if(!w||!h) return;
+    var dpr=Math.min(window.devicePixelRatio||1,w<640?1.35:1.9);
+    renderer.setPixelRatio(dpr);
+    renderer.setSize(w,h,false);
+    camera.aspect=w/h;camera.updateProjectionMatrix();
+    baseY=w<600?1.68:1.85;
+    baseZ=w<600?13.9:(w<960?13.05:12.3);
+    if(RM) renderOnce();
+  }
+
+  function updateScene(dt,t,snap){
+    modules.forEach(function(m,i){
+      var aTarget=active===i?1:0;
+      var dTarget=(active>=0&&active!==i)?1:0;
+      m.a=snap?aTarget:m.a+(aTarget-m.a)*Math.min(1,dt*7);
+      m.dd=snap?dTarget:m.dd+(dTarget-m.dd)*Math.min(1,dt*7);
+      var g=m.group;
+      g.position.y=m.data.pos[1]+Math.sin(t*.62+m.phase)*.055;
+      g.rotation.y=m.data.rot+Math.sin(t*.24+m.phase*.7)*.018;
+      g.rotation.z=Math.sin(t*.4+m.phase)*.011;
+      g.scale.setScalar(m.data.scale*(1+m.a*.085-m.dd*.024));
+      var boost=1.15+m.a*.2;
+      m.screenMat.color.setRGB(boost,boost,boost).lerp(dimColor,m.dd*.8);
+      m.edgeMat.opacity=.32+m.a*.62-m.dd*.17;
+      m.lipMat.opacity=.16+m.a*.42-m.dd*.08;
+      m.haloMat.opacity=.14+m.a*.5-m.dd*.07;
+      var tubeTarget=active<0?.24:(active===i?.85:.06);
+      m.tubeMat.opacity=snap?tubeTarget:m.tubeMat.opacity+(tubeTarget-m.tubeMat.opacity)*Math.min(1,dt*6);
+    });
+
+    core.rotation.y=t*.5;core.rotation.x=Math.sin(t*.28)*.24;
+    coreMat.emissiveIntensity=2.2+Math.sin(t*1.25)*.45;
+    coreGlow.scale.set(2.2+Math.sin(t*1.1)*.12,2.2+Math.sin(t*1.1)*.12,1);
+    hubLight.intensity=24+Math.sin(t*1.2)*5;
+    rings.forEach(function(r,k){
+      r.rotation.x=Math.PI/2+Math.sin(t*.22+k*1.3)*.17;
+      r.rotation.z=k*1.2+t*(.05+k*.015);
+    });
+    gyro.rotation.y=t*.24;
+    pulses.forEach(function(r,k){
+      var ph=(t*.14+k/3)%1;
+      r.scale.setScalar(.55+ph*5.4);
+      r.material.opacity=(1-ph)*(1-ph)*.34;
+    });
+    travellers.forEach(function(tr){
+      var ph=(t*.115+tr.offset)%1;
+      tr.curve.getPoint(ph,tmpV);
+      tr.sprite.position.copy(tmpV);
+      var s=.055+(active===tr.link?.045:0)+Math.sin(t*2.4+tr.offset*14)*.008;
+      tr.sprite.scale.set(s,s,1);
+    });
+    dust.rotation.y=t*.012;
+    dust.position.y=Math.sin(t*.18)*.08;
+    bokeh.forEach(function(b){
+      b.sprite.material.opacity=b.base*(.7+.3*Math.sin(t*.55+b.phase));
+    });
+  }
+
+  function updateLabels(){
+    modules.forEach(function(m,i){
+      m.group.getWorldPosition(tmpV);
+      tmpV.y-=.26;
+      tmpV.project(camera);
+      var x=(tmpV.x*.5+.5)*100,y=(-tmpV.y*.5+.5)*100;
+      x=Math.max(7,Math.min(93,x));y=Math.max(9,Math.min(93,y));
+      tags[i].style.setProperty('--tx',x.toFixed(2)+'%');
+      tags[i].style.setProperty('--ty',y.toFixed(2)+'%');
+    });
+  }
+
+  function placeCamera(){
+    camera.position.set(0,baseY,baseZ);
+    camera.lookAt(0,.12,0);
+  }
+
+  function updateCamera(dt){
+    var tx=pointerX*.38;
+    var ty=baseY+pointerY*.22+scrollShift;
+    var k=Math.min(1,dt*5.5);
+    camera.position.x+=(tx-camera.position.x)*k;
+    camera.position.y+=(ty-camera.position.y)*k;
+    camera.position.z+=(baseZ-camera.position.z)*k;
+    camera.lookAt(0,.12,0);
+  }
+
+  function renderOnce(){
+    if(dead) return;
+    updateScene(0,(performance.now()-startTime)/1000,true);
+    placeCamera();
+    updateLabels();
+    renderer.render(scene,camera);
+  }
+
+  function loop(now){
+    raf=null;
+    if(!inView||document.hidden) return;
+    var t=(now-startTime)/1000;
+    var dt=last?Math.min(.05,(now-last)/1000):.016;
+    last=now;
+    updateScene(dt,t,false);
+    updateCamera(dt);
+    updateLabels();
+    renderer.render(scene,camera);
+    raf=requestAnimationFrame(loop);
+  }
+  function start(){
+    if(dead) return;
+    if(RM){renderOnce();return;}
+    if(raf||!inView||document.hidden) return;
+    last=0;raf=requestAnimationFrame(loop);
+  }
+  function stop(){if(raf){cancelAnimationFrame(raf);raf=null;}}
+
+  function hitTest(e){
+    var r=canvas.getBoundingClientRect();
+    if(!r.width||!r.height) return -1;
+    pointer.x=((e.clientX-r.left)/r.width)*2-1;
+    pointer.y=-((e.clientY-r.top)/r.height)*2+1;
+    raycaster.setFromCamera(pointer,camera);
+    var hits=raycaster.intersectObjects(hitMeshes,false);
+    return hits.length?hits[0].object.userData.index:-1;
+  }
+
+  function setActive3D(i){
+    if(dead){applyUI(i);return;}
+    if(i===active) return;
+    applyUI(i);
+    if(RM) renderOnce();
+  }
+  setActive=setActive3D;
+
+  if(FINE){
+    canvas.addEventListener('pointermove',function(e){
+      if(innerWidth<=760) return;
+      var i=hitTest(e);
+      stage.classList.toggle('is-hot',i>=0);
+      setActive(i);
+    },{passive:true});
+    canvas.addEventListener('pointerleave',function(){
+      stage.classList.remove('is-hot');
+      setActive(-1);
+    });
+    canvas.addEventListener('click',function(e){
+      var i=hitTest(e);
+      if(i>=0) window.location.href=DATA[i].route;
+    });
+    stage.addEventListener('pointermove',function(e){
+      if(RM||innerWidth<=760) return;
+      var r=stage.getBoundingClientRect();
+      if(!r.width||!r.height) return;
+      pointerX=Math.max(-1,Math.min(1,((e.clientX-r.left)/r.width-.5)*2));
+      pointerY=Math.max(-1,Math.min(1,((e.clientY-r.top)/r.height-.5)*2));
+    },{passive:true});
+    stage.addEventListener('pointerleave',function(){pointerX=0;pointerY=0;});
+    addEventListener('scroll',function(){
+      if(RM) return;
+      var r=stage.getBoundingClientRect();
+      var vh=innerHeight||1;
+      scrollShift=Math.max(-1,Math.min(1,(r.top+r.height/2-vh/2)/vh))*.22;
+    },{passive:true});
+  }
+
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      inView=es[0].isIntersecting;
+      if(inView) start(); else stop();
+    },{threshold:.02}).observe(stage);
+  }else{inView=true;start();}
+
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden) stop(); else if(inView) start();
+  });
+
+  if('ResizeObserver' in window) new ResizeObserver(resize).observe(stage);
+  else addEventListener('resize',resize,{passive:true});
+
+  canvas.addEventListener('webglcontextlost',function(e){
+    e.preventDefault();
+    dead=true;stop();
+    stage.classList.add('no-webgl');
+  },false);
+
+  placeCamera();
+  resize();
+  renderOnce();
+
+  addEventListener('pagehide',function(){
+    stop();dead=true;
+    renderer.dispose();
+    scene.traverse(function(o){
+      if(o.geometry) o.geometry.dispose();
+      if(o.material){
+        if(Array.isArray(o.material)) o.material.forEach(function(m){m.dispose();});
+        else o.material.dispose();
+      }
+    });
+    textures.forEach(function(t){t.dispose();});
+  },{once:true});
+})();
+</script>
+</body>
+</html>
